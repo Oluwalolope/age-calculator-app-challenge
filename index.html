@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS Reset  -->
+    <link rel="stylesheet" href="css-reset.css">
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+    <div class="container">
+        <div class="age--input">
+            <form>
+                <!-- Day of birth -->
+                <div class="input--wrapper" class="invalid">
+                    <label for="dayOfBirth" aria-label="day of birth">Day</label>
+                    <input type="number" name="dayOfBirth" id="dayOfBirth" min="1" max="31" minlength="1" maxlength="2" placeholder="DD" aria-invalid="true" aria-errormessage="feedback">
+                    <p class="feedback" role="alert">Must be a valid day</p>
+                </div>
+                <!-- Month of birth -->
+                <div class="input--wrapper">
+                    <label for="monthOfBirth" aria-label="month of birth">Month</label>
+                    <input type="number" name="monthOfBirth" id="monthOfBirth" min="1" max="12" minlength="1" maxlength="2" placeholder="MM" aria-invalid="true" aria-errormessage="feedback">
+                    <p class="feedback" role="alert">Must be a valid month</p>
+                </div>
+                <!-- Year of birth -->
+                <div class="input--wrapper">
+                    <label for="yearOfBirth" aria-label="year of birth">Year</label>
+                    <input type="number" name="yearOfBirth" id="yearOfBirth" min="1200" minlength="4" maxlength="4" placeholder="YYYY" aria-invalid="true" aria-errormessage="feedback">
+                    <p class="feedback" role="alert">Must be in the past</p>
+                </div>
+
+            </form>
+        </div>
+        <div class="btn">
+            <button type="submit" class="submit_btn">
+                <img src="assets/images/icon-arrow.svg" alt="a downward arrow that submits the form when pressed">
+            </button>
+        </div>
+        <div class="age--output">
+            <p class="age"><span class="years">--</span>years</p>
+            <p class="age"><span class="months">--</span>months</p>
+            <p class="age"><span class="days">--</span>days</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
