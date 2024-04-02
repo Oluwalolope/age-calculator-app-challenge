@@ -96,7 +96,7 @@ button.addEventListener('click', e => {
             calculatedAgeInMonths = currentMonth - birthMonth;
         } else {
             calculatedAgeInYears--;
-            calculatedAgeInMonths = 13 + currentMonth - birthMonth;
+            calculatedAgeInMonths = 12 + currentMonth - birthMonth;
         }
         
         if (currentDay >= birthDay) {
